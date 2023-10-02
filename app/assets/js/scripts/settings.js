@@ -452,7 +452,7 @@ function bindAuthAccountSelect(){
             for(let i=0; i<selectBtns.length; i++){
                 if(selectBtns[i].hasAttribute('selected')){
                     selectBtns[i].removeAttribute('selected')
-                    selectBtns[i].innerHTML = 'Select Account'
+                    selectBtns[i].innerHTML = 'Sélectionner le compte'
                 }
             }
             val.setAttribute('selected', '')
@@ -602,12 +602,12 @@ function refreshAuthAccountSelected(uuid){
         const selBtn = val.getElementsByClassName('settingsAuthAccountSelect')[0]
         if(uuid === val.getAttribute('uuid')){
             selBtn.setAttribute('selected', '')
-            selBtn.innerHTML = 'Compte selectionné &#10004;'
+            selBtn.innerHTML = 'Compte sélectionné &#10004;'
         } else {
             if(selBtn.hasAttribute('selected')){
                 selBtn.removeAttribute('selected')
             }
-            selBtn.innerHTML = 'Select Account'
+            selBtn.innerHTML = 'Sélectionner le compte'
         }
     })
 }
@@ -648,7 +648,7 @@ function populateAuthAccounts(){
                     </div>
                 </div>
                 <div class="settingsAuthAccountActions">
-                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Compte Selectionné &#10004;' : '>Selectionner le compte'}</button>
+                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Compte Sélectionné &#10004;' : '>Sélectionner le compte'}</button>
                     <div class="settingsAuthAccountWrapper">
                         <button class="settingsAuthAccountLogOut">Se Déconnecter</button>
                     </div>
@@ -1295,7 +1295,7 @@ function populateJavaReqDesc(server) {
 
 function populateJvmOptsLink(server) {
     const major = server.effectiveJavaOptions.suggestedMajor
-    settingsJvmOptsLink.innerHTML = `Available Options for Java ${major} (HotSpot VM)`
+    settingsJvmOptsLink.innerHTML = `Options disponible pour Java ${major} (HotSpot VM)`
     if(major >= 12) {
         settingsJvmOptsLink.href = `https://docs.oracle.com/en/java/javase/${major}/docs/specs/man/java.html#extra-options-for-java`
     }

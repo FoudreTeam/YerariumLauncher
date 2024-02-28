@@ -1,13 +1,13 @@
 {
-  "name": "lunarcraftlauncher",
-  "version": "1.1.6",
-  "productName": "LunarCraft Launcher",
-  "description": "LunarCraft Launcher Serveur Survie Moddée",
+  "name": "yerariumlauncher",
+  "version": "1.0.0",
+  "productName": "Yerarium Launcher",
+  "description": "Yerarium Launcher Serveur PvP Faction Moddé",
   "author": "FoudreTeam",
   "license": "ISC License",
-  "homepage": "https://github.com/FoudreTeam/LunarCraftLauncher",
+  "homepage": "https://github.com/FoudreTeam/YerariumLauncher",
   "bugs": {
-    "url": "https://github.com/FoudreTeam/LunarCraftLauncher/issues"
+    "url": "https://github.com/FoudreTeam/YerariumLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -44,6 +44,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FoudreTeam/LunarCraftLauncher2.git"
+    "url": "git+https://github.com/FoudreTeam/YerariumLauncher.git"
   }
 }
